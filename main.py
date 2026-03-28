@@ -27,7 +27,7 @@ model = MultinomialNB()
 model.fit(X, y)
 
 # Test
-test = ["Free money offer"]
+test = [input("Enter a message: ")]
 test_vec = vectorizer.transform(test)
 prediction = model.predict(test_vec)
 
